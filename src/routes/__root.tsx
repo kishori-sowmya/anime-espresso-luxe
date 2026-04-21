@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "komorebi" },
+      { name: "description", content: "Cozy Corner Cafe is a premium website for a high-end cafe, featuring an anime-inspired modern aesthetic." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "komorebi" },
+      { property: "og:description", content: "Cozy Corner Cafe is a premium website for a high-end cafe, featuring an anime-inspired modern aesthetic." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "komorebi" },
+      { name: "twitter:description", content: "Cozy Corner Cafe is a premium website for a high-end cafe, featuring an anime-inspired modern aesthetic." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c3d74413-a460-4999-b19c-91029e9dcf5f/id-preview-f9590c87--b78fc4bb-c7d2-40af-a539-d94d0f4ec4bf.lovable.app-1776782323731.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c3d74413-a460-4999-b19c-91029e9dcf5f/id-preview-f9590c87--b78fc4bb-c7d2-40af-a539-d94d0f4ec4bf.lovable.app-1776782323731.png" },
     ],
     links: [
       {
