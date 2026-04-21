@@ -1,26 +1,37 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/Nav";
+import { Hero } from "@/components/Hero";
+import { Marquee } from "@/components/Marquee";
+import { About } from "@/components/About";
+import { Menu } from "@/components/Menu";
+import { Ambience } from "@/components/Ambience";
+import { Contact } from "@/components/Contact";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Komorebi · A Quiet Premium Cafe in Kyoto" },
+      {
+        name: "description",
+        content: "Komorebi is a premium anime-inspired cafe in Kyoto — slow brewed coffee, hand-thrown ceramics and afternoon light filtered through the leaves.",
+      },
+      { property: "og:title", content: "Komorebi · A Quiet Premium Cafe in Kyoto" },
+      { property: "og:description", content: "Slow brewed coffee, matcha rituals and a pocket of stillness in the city." },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="bg-background text-foreground antialiased">
+      <Nav />
+      <Hero />
+      <Marquee />
+      <About />
+      <Menu />
+      <Ambience />
+      <Contact />
+    </main>
+  );
 }
